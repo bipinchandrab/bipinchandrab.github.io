@@ -7,8 +7,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="assets/js/jquery.js"></script>
+		<script language="javascript">
+			$('document').ready(function(e) {
+				$(".loader").fadeOut("slow");
+			});
+		</script>
+		<style>
+			.loader{ position: fixed;left: 0px;top: 0px;width:100%;height:100%;z-index: 9999;background: url(images/pageloader.gif) 50% 50% no-repeat rgb(249,249,249);}
+		</style>
 	</head>
 	<body class="is-preload">
+		<!-- Loding -->
 
 		<!-- Wrapper -->
 			<div id="wrapper">
